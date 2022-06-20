@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/game.css">
+
+  <script src="../js/game.js" type="module"></script>
+
+</head>
+
+<body>
+  <header>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Game</a>
+      <a href="#">Rank</a>
+      <a href="#">Layout</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav();">&#9776;</span>
+    <h1>Game 2048</h1>
+  </header>
+
+  <div id="game-board"></div>
+
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+
+</body>
+</html>
